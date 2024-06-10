@@ -119,6 +119,8 @@
         .attr("src", element.attr("src"));
       $(`#${lightboxId}`).modal("toggle");
     },
+
+
     prevImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
@@ -153,11 +155,15 @@
           index = i ;
         }
       });
+      //Décrémentation de l'index pour afficher la photo précédente
+      index -= 1;
       next =
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
+
+
     nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
@@ -184,6 +190,7 @@
           }
         });
       }
+      
       let index = 0,
         next = null;
 
@@ -192,7 +199,11 @@
           index = i;
         }
       });
+      //Incrémentation de l'index pour sélectionner la photo suivante
+      index += 1;
+
       next = imagesCollection[index] || imagesCollection[0];
+      
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
@@ -240,7 +251,9 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+
+      //ajout du bon tag ici pour corriger le problème de fond coloré
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 

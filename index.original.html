@@ -2,48 +2,64 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 	<title>Nina Carducci</title>
 	<meta name="description" content="Découvrez le portfolio captivant de Nina Carducci.
 	Immortalisez vos moments précieux avec une touche artistique et unique.">
 	<meta name="robots" content="index, follow">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.min.js"></script>
 	<script src="./assets/scripts.min.js"></script>
-
+	<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 
 	<meta property="og:title" content="Nina Carducci">
 	<meta property="og:description" content="Découvrez le portfolio captivant de Nina Carducci. Immortalisez vos moments précieux avec une touche artistique et unique.">
-	<meta property="og:image" content="https://ninacarducci.fr/assets/images/nina.jpg">
-	<meta property="og:url" content="Ninacarducci.fr">
+	<meta property="og:image" content="https://jordanlegros.github.io/openclassroom-projet4//assets/images/nina.jpg">
+	<meta property="og:url" content="https://jordanlegros.github.io/openclassroom-projet4/">
+
+	<!-- Méta CSP -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://code.jquery.com 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=';
+        style-src 'self' 'unsafe-inline';
+        font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
+        img-src 'self' https://jordanlegros.github.io/openclassroom-projet4/ data:;
+        connect-src 'self' https://jordanlegros.github.io/openclassroom-projet4/;
+    ">
 
 	<meta name="language" content="fr-FR">
 
-		<script type="application/ld+json">
-			{
-			"@context": "https://schema.org",
-			"@type": "Organization",
-			"name": "Nina Carducci",
-			"url": "https://ninacarducci.fr",
-			"logo": "https://ninacarducci.fr/assets/images/nina.jpg",
-			"description": "Portfolio captivant de Nina Carducci. Immortalisez vos moments précieux avec une touche artistique et unique.",
-			"sameAs": [
-				"https://www.instagram.com/ninacarducci.photo/?hl=fr"
-			],
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "2 Cr de l'île Louviers",
-				"addressLocality": "Paris",
-				"postalCode": "75004",
-				"addressCountry": "FR"
-			}
-			}
+
+
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "name": "Nina Carducci",
+		  "url": "https://jordanlegros.github.io/openclassroom-projet4/",
+		  "logo": "https://jordanlegros.github.io/openclassroom-projet4/assets/images/nina.jpg",
+		  "description": "Portfolio captivant de Nina Carducci. Immortalisez vos moments précieux avec une touche artistique et unique.",
+		  "sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/?hl=fr"
+		  ],
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		  },
+		  "telephone": "+33 5 56 67 78 89",
+		  "openingHours": "Mo-Fr 10:00-19:00"
+		}
 		</script>
 
 		<script type="application/ld+json">
@@ -51,7 +67,7 @@
 			  "@context": "https://schema.org",
 			  "@type": "Product",
 			  "name": "Shooting photo",
-			  "image": "https://ninacarducci.fr/assets/images/camera.jpg",
+			  "image": "https://jordanlegros.github.io/openclassroom-projet4/assets/images/camera.jpg",
 			  "description": "Service de shooting photo pour capturer vos moments les plus précieux.",
 			  "brand": {
 				"@type": "Brand",
@@ -71,7 +87,7 @@
 			  "@context": "https://schema.org",
 			  "@type": "Product",
 			  "name": "Retouches",
-			  "image": "https://ninacarducci.fr/assets/images/camera.jpg",
+			  "image": "https://jordanlegros.github.io/openclassroom-projet4/assets/images/camera.jpg",
 			  "description": "Service de retouches photo pour un résultat professionnel.",
 			  "brand": {
 				"@type": "Brand",
@@ -91,7 +107,7 @@
 			  "@context": "https://schema.org",
 			  "@type": "Product",
 			  "name": "Album photos",
-			  "image": "https://ninacarducci.fr/assets/images/camera.jpg",
+			  "image": "https://jordanlegros.github.io/openclassroom-projet4/assets/images/camera.jpg",
 			  "description": "Album photo personnalisé pour partager vos moments précieux.",
 			  "brand": {
 				"@type": "Brand",
@@ -235,11 +251,11 @@
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
 				<label for="nom">Nom</label>
-				<input type="text" name="nom" id="nom">
+				<input type="text" name="nom" id="nom" autocomplete="name">
 				<label for="email">Email</label>
-				<input type="email" name="email" id="email">
+				<input type="email" name="email" id="email" autocomplete="email">
 				<label for="message">Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				<textarea name="message" id="message" cols="30" rows="10" autocomplete="message"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
 		</div>

@@ -244,6 +244,10 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+.prix{
+	font-size: 3em;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
